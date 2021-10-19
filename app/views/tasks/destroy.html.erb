@@ -1,0 +1,10 @@
+<h1>Tasks#destroy</h1>
+<p>Find me in app/views/tasks/destroy.html.erb</p>
+<%= link_to "Delete #{@task.name}",
+            restaurant_path(@task),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
+
+<a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/tasks/:id">
+  Delete the spoon
+</a>
